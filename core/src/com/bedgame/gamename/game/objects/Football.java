@@ -12,7 +12,7 @@ public class Football extends AbstractGameObject {
 
     private static final String TAG = Football.class.getName();
 
-    private TextureRegion footbalRegion = Assets.instance.football.football;
+    private TextureRegion footballRegion = Assets.instance.football.football;
 
     private int rotationSign;
 
@@ -30,11 +30,11 @@ public class Football extends AbstractGameObject {
 
     @Override
     public void render(SpriteBatch batch) {
-        batch.draw(footbalRegion, position.x, position.y, origin.x, origin.y, dimension.x, dimension.y, scale.x, scale.y, rotation);
+        batch.draw(footballRegion, position.x, position.y, origin.x, origin.y, dimension.x, dimension.y, scale.x, scale.y, rotation);
 /*
-        batch.draw(footbalRegion.getTexture(), position.x + 1, position.y + 1, origin.x, origin.y, dimension.x, dimension.y, scale.x, scale.y, rotation,
-                footbalRegion.getRegionX(), footbalRegion.getRegionY(),
-                footbalRegion.getRegionWidth(), footbalRegion.getRegionHeight(),
+        batch.draw(footballRegion.getTexture(), position.x + 1, position.y + 1, origin.x, origin.y, dimension.x, dimension.y, scale.x, scale.y, rotation,
+                footballRegion.getRegionX(), footballRegion.getRegionY(),
+                footballRegion.getRegionWidth(), footballRegion.getRegionHeight(),
                 false, false);*/
     }
 

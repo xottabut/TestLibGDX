@@ -12,8 +12,6 @@ import com.bedgame.gamename.util.Constants;
 public class Level {
     private static final String TAG = Level.class.getName();
 
-    
-
     public Array<Ground> grounds;
 
     public Level() {
@@ -22,8 +20,8 @@ public class Level {
 
     private void init() {
         grounds = new Array<>();
-        float x = - Constants.VIEWPORT_WIDTH / 2;
-        float y = - Constants.VIEWPORT_HEIGHT / 3;
+        float x = -Constants.VIEWPORT_WIDTH / 2;
+        float y = -Constants.VIEWPORT_HEIGHT / 3;
         for (int i = 0; i < 15; i++) {
             Ground ground = new Ground();
             ground.position.set(x, y);
@@ -34,7 +32,7 @@ public class Level {
     }
 
     public void render(SpriteBatch batch) {
-        for (Ground ground : grounds){
+        for (Ground ground : grounds) {
             ground.render(batch);
         }
     }
